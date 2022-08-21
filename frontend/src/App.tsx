@@ -14,16 +14,16 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Dashboard>
-            <Route path="/">
+            <Route exact path="/">
                 <Home />
             </Route>
-            <Route path="/shift">
+            <Route exact path="/shift">
                 <Shift />
             </Route>
-            <Route path="/shift/add">
+            <Route exact path="/shift/add">
                 <ShiftForm />
             </Route>
-            <Route path="/shift/:id/edit">
+            <Route exact path="/shift/:id/edit">
                 <ShiftForm />
             </Route>
           </Dashboard>
